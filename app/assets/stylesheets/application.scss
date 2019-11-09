@@ -2,5 +2,7 @@
 @import "variable";
 @import "font-awesome-sprockets";
 @import "./font-awesome";
-@import "_side_bar";
-@import "_main_chat";
+@import "modules/side_bar";
+@import "modules/main_chat";
+@import "modules/user";
+@import "modules/flash";

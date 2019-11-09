@@ -2,11 +2,12 @@
   .chat-side
     .side-header
       .side-header__box
-        %p.side-header__box__user-name test_user
+        %p.side-header__box__user-name 
+          = current_user.name
         %ul.side-header__box__menu
           = link_to '#', class: "side-header__box__menu__new-group" do
             %i.fas.fa-edit
-          = link_to '#', class: "side-header__box__menu__edit-user" do
+          = link_to edit_user_path(current_user), class: "side-header__box__menu__edit-user" do
             %i.fas.fa-cog
 
     .groups
