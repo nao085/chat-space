@@ -50,6 +50,10 @@ body {
         color: $white;
         font-weight: bold;
         text-decoration: none;
+        &__group-link {
+          text-decoration: none;
+          color: $white;
+        }
         &__group-name {
           font-size: 15px;
           padding-bottom: 5px;
