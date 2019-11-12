@@ -1,5 +1,5 @@
 .chat-main {
-  width: calc(100vw - 300px);
+  width: calc(100% - 300px);
   float: left;
   .main-header {
     height: 100px;
@@ -35,7 +35,7 @@
     }
   }
   .messages {
-    height: calc(100vh - 190px);
+    height: calc(100vh - 100px - 90px);
     padding: 46px 40px;
     background-color: #fafafa;
     overflow: scroll;
@@ -66,42 +66,38 @@
     height: 50px;
     padding: 20px 40px;
     background-color: #ddd;
-    width: calc(100vw - 380px);
-    bottom: 0;
     position: fixed;
-    .new_message {
+    bottom: 0;
+    width: calc(100vw - 380px);
+    &__message {
+      height: 50px;
+      width: calc(100% - 135px);
+      padding: 0 10px;
+      margin-right: 15px;
+      color: $light_gray;
+    }
+    &__mask {
       position: relative;
-      .input-box {
-        display: flex;
-        &__text {
-          height: 50px;
-          width: calc(100% - 135px);
-          padding: 0 10px;
-          margin-right: 15px;
-          color: $black;
-          border-style: none;
-        }
-        &__image {
-          font-size: 1.3rem;
-          position: absolute;
-          top: 10px;
-          right: 125px;
-          cursor: pointer;
-          &__file {
-            display: none;
-          }
-        }
-      }
-      .submit-btn {
+      &__image {
+        font-size: 1.3rem;
         position: absolute;
-        top: 0px;
-        right: 0px;
-        width: 100px;
-        height: 50px;
-        background-color: $light_blue;
-        color: $white;
+        top: 30px;
+        right: 160px;
         cursor: pointer;
+        .hidden {
+          display: none;
+        }
       }
+    }
+    &__submit {
+      position: absolute;
+      top: 20px;
+      right: 40px;
+      width: 100px;
+      height: 50px;
+      background-color: $light_blue;
+      color: $white;
+      cursor: pointer;
     }
   }
 }
