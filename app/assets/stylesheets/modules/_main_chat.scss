@@ -75,10 +75,11 @@
       padding: 0 10px;
       margin-right: 15px;
       color: $light_gray;
+      position: relative;
     }
     &__mask {
-      position: relative;
       &__image {
+        height: 50px;
         font-size: 1.3rem;
         position: absolute;
         top: 30px;
